@@ -1,0 +1,6 @@
+title: "Ni colapso ni comodidad"
+description: "Evidencia de una presión selectiva sobre los hogares en República Dominicana"
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
