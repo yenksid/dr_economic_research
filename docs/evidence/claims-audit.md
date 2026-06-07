@@ -7,6 +7,10 @@ title: "Claims audit"
 
 This page summarizes which claims are allowed, which remain unproven, and which are rejected inference boundaries.
 
+## Visual
+
+![Claim status counts](../assets/claim_status_counts_en.svg)
+
 ## Core rule
 
 **Pressure is not behavior.**

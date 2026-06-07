@@ -26,3 +26,11 @@ This folder contains publishable copies of the main CSV files for GitHub Pages.
 
 - [local_source_artifact_registry_v1.csv](./local_source_artifact_registry_v1.csv)
 - [source_domain_summary_v1.csv](./source_domain_summary_v1.csv)
+
+
+## Link health / Salud de enlaces
+
+- [verified_public_bibliography_v1.csv](./verified_public_bibliography_v1.csv)
+- [api_machine_endpoint_registry_v1.csv](./api_machine_endpoint_registry_v1.csv)
+- [source_link_health_report_v1.csv](./source_link_health_report_v1.csv)
+- [problem_source_links_v1.csv](./problem_source_links_v1.csv)

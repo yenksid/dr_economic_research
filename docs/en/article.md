@@ -1,10 +1,5 @@
 # Not Collapse, Not Comfort: Evidence for a Selective Household Squeeze in the Dominican Republic
 
-status=SLICE14A_PUBLISHABLE_ARTICLE_DRAFT_V1  
-created_utc=2026-06-07T21:37:28.351635+00:00  
-evidence_checkpoint=INTEGRATED_INTERIM_SYNTHESIS_V15_WITH_SLICE12B_PASS  
-claims_gate=SLICE13A_CLAIMS_AUDIT_PACKAGE_V1_PASS  
-red_team_gate=SLICE13B_RED_TEAM_THESIS_V1_PASS  
 
 ## The short version
 
@@ -19,6 +14,15 @@ The strongest current reading is more specific and more uncomfortable:
 That means the economy can show resilience at the macro level while pressure still concentrates unevenly across households, informal workers, small businesses, and people exposed to food costs. It also means that some formal workers may have received enough wage cushioning to soften part of the shock, while many other groups remain harder to measure with the evidence currently available.
 
 This article is not an argument that everything is falling apart. It is also not an argument that everything is fine. It is an evidence-bounded attempt to separate what can be shown from what is still missing.
+
+
+## Visual summary
+
+![Thesis logic map](../assets/thesis_logic_map_en.svg)
+
+![Claim status counts](../assets/claim_status_counts_en.svg)
+
+These visuals summarize the investigation logic and claim boundaries. They do not add new evidence.
 
 ## Why the usual debate is too simple
 

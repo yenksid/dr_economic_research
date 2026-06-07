@@ -5,6 +5,10 @@ title: "Red-team de la tesis"
 
 # Red-team de la tesis
 
+## Visual
+
+![Mapa lógico de la tesis](../assets/thesis_logic_map_es.svg)
+
 La tesis fue atacada desde dos lados:
 
 1. **Comodidad:** la economía es resistente, por tanto la presión está exagerada.

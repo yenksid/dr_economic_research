@@ -1,12 +1,5 @@
 # Ni colapso ni comodidad: evidencia de una presión selectiva sobre los hogares en República Dominicana
 
-status=SLICE14B_PUBLISHABLE_ARTICLE_ES_DRAFT_V1  
-created_utc=2026-06-07T21:43:26.692530+00:00  
-evidence_checkpoint=INTEGRATED_INTERIM_SYNTHESIS_V15_WITH_SLICE12B_PASS  
-claims_gate=SLICE13A_CLAIMS_AUDIT_PACKAGE_V1_PASS  
-red_team_gate=SLICE13B_RED_TEAM_THESIS_V1_PASS  
-english_source=SLICE14A_PUBLISHABLE_ARTICLE_DRAFT_V1_PASS  
-language_role=SPANISH_PRIMARY_PUBLIC_VERSION  
 
 ## La versión corta
 
@@ -21,6 +14,15 @@ La lectura más fuerte hasta ahora es más específica y más incómoda:
 Eso significa que la economía puede mostrar resistencia a nivel macroeconómico mientras la presión se concentra de manera desigual en hogares, trabajadores informales, pequeños negocios y personas más expuestas al costo de los alimentos. También significa que algunos trabajadores formales pudieron recibir cierto colchón salarial, mientras otros grupos siguen siendo más difíciles de medir con la evidencia disponible.
 
 Este artículo no pretende decir que todo se está cayendo. Tampoco pretende decir que todo está bien. Su propósito es separar lo que la evidencia permite afirmar de lo que todavía falta por probar.
+
+
+## Resumen visual
+
+![Mapa lógico de la tesis](../assets/thesis_logic_map_es.svg)
+
+![Estados de afirmaciones](../assets/claim_status_counts_es.svg)
+
+Estos visuales resumen la lógica de la investigación y los límites de afirmación. No añaden evidencia nueva.
 
 ## Por qué el debate usual es demasiado simple
 

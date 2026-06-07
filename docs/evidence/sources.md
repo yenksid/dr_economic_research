@@ -5,121 +5,189 @@ title: "Sources and bibliography"
 
 # Sources and bibliography
 
-This page publishes a key public bibliography for auditing the investigation.
+This page publishes a **verified browser-readable bibliography** for auditing the investigation.
 
 ## Editorial decision
 
-The full automatic extraction produced tens of thousands of URLs. That material is preserved locally as a machine-audit artifact, but it is not published as the main bibliography because it includes repetitions, technical links, and noise.
+The public bibliography separates three things:
 
-The public repository uses a smaller, readable, organized bibliography.
+1. **Verified browser-readable sources:** links that responded successfully at check time.
+2. **APIs or dynamic endpoints:** machine sources that should not be presented as normal human-readable pages.
+3. **Problem links:** links that returned 404, server errors, access blocks, or connection failures at check time.
 
 ## Public files
 
-- Key public bibliography: [`data/key_public_bibliography_v1.csv`](../data/key_public_bibliography_v1.csv)
-- Key bibliography domain summary: [`data/key_public_bibliography_domain_summary_v1.csv`](../data/key_public_bibliography_domain_summary_v1.csv)
-- Local artifact registry: [`data/local_source_artifact_registry_v1.csv`](../data/local_source_artifact_registry_v1.csv)
-- Automatic detected-domain summary: [`data/source_domain_summary_v1.csv`](../data/source_domain_summary_v1.csv)
+- Verified bibliography: [`data/verified_public_bibliography_v1.csv`](../data/verified_public_bibliography_v1.csv)
+- API/dynamic endpoint registry: [`data/api_machine_endpoint_registry_v1.csv`](../data/api_machine_endpoint_registry_v1.csv)
+- Full link-health report: [`data/source_link_health_report_v1.csv`](../data/source_link_health_report_v1.csv)
+- Separated problem links: [`data/problem_source_links_v1.csv`](../data/problem_source_links_v1.csv)
+- Original key bibliography: [`data/key_public_bibliography_v1.csv`](../data/key_public_bibliography_v1.csv)
 
-## Counts
+## Audit counts
 
-- Key sources selected: **223**
-- Domains in key bibliography: **25**
+- Verified browser-readable sources: **166**
+- API/dynamic endpoints separated: **28**
+- Problem links separated: **29**
 
-## Official Dominican sources
+## Verified browser-readable sources
 
-- [Oficina Nacional de Estadística / household, labor, business or statistical data](http://anda.one.gob.do) — `anda.one.gob.do`
-- [Oficina Nacional de Estadística / household, labor, business or statistical data](https://anda.one.gob.do/) — `anda.one.gob.do`
-- [Oficina Nacional de Estadística / household, labor, business or statistical data](https://anda.one.gob.do/,https://anda.one.gob.do/,,20,official_domain_or_path) — `anda.one.gob.do`
-- [Oficina Nacional de Estadística / household, labor, business or statistical data](https://anda.one.gob.do/index.php) — `anda.one.gob.do`
-- [Oficina Nacional de Estadística / household, labor, business or statistical data](https://anda.one.gob.do/index.php/) — `anda.one.gob.do`
-- [Oficina Nacional de Estadística / household, labor, business or statistical data](https://anda.one.gob.do/index.php/anda) — `anda.one.gob.do`
-- [Oficina Nacional de Estadística / household, labor, business or statistical data](https://anda.one.gob.do/index.php/auth/login) — `anda.one.gob.do`
-- [Oficina Nacional de Estadística / household, labor, business or statistical data](https://anda.one.gob.do/index.php/catalog) — `anda.one.gob.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://apibcrd.bancentral.gov.do/api/services/app/MacroVariables/Inflacion,,/api/services/app/MacroVariables/Inflacion,,,,-30,REJECT_ENDPOINT_FALSE_POSITIVE_NOT_ENCFT_INCOME,reject,Endpoint) — `apibcrd.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://apibcrd.bancentral.gov.do/main.6a100f7304c4c093f83e.js,no,yes,,,https://apibcrd.bancentral.gov.do/api/services/app/MacroVariables/Inflacion) — `apibcrd.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://apibcrd.bancentral.gov.do/,GET,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9c_bcrd_context_endpoint_contract_probe/sources/8d6b505d25_index.html,200,text/html,1197,no,,0,0,0,NO_CONTRACT_OR_ENCFT_INCOME_SIGNAL,reject,API) — `apibcrd.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://apibcrd.bancentral.gov.do/,https://apibcrd.bancentral.gov.do/,,20,official_domain_or_path) — `apibcrd.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://apibcrd.bancentral.gov.do/api/services/app/MacroVariables/Inflacion) — `apibcrd.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://apibcrd.bancentral.gov.do/api/services/app/MacroVariables/Inflacion,https://apibcrd.bancentral.gov.do/api/services/app/MacroVariables/Inflacion,https://apibcrd.bancentral.gov.do/main.6a100f7304c4c093f83e.js,30,REJECT_ENDPOINT_NO_STRICT_CONTRACT_SIGNAL,reject,Endpoint) — `apibcrd.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://apibcrd.bancentral.gov.do/,https://www.bancentral.gov.do/Publicaciones/Consulta,inline_or_raw_endpoint_hint,20,no,no,yes) — `apibcrd.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://apibcrd.bancentral.gov.do/api/TokenAuth/Authenticate,https://apibcrd.bancentral.gov.do/main.6a100f7304c4c093f83e.js,inline_or_raw_endpoint_hint,20,no,no,yes) — `apibcrd.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://apibcrd.bancentral.gov.do/api/TokenAuth/ExternalAuthenticate,https://apibcrd.bancentral.gov.do/main.6a100f7304c4c093f83e.js,inline_or_raw_end) — `apibcrd.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://apibcrd.bancentral.gov.do/,,/,,,,80,STRICT_ENDPOINT_CONTEXT_ENCFT_DATA_OR_API,context_review) — `apibcrd.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://apibcrd.bancentral.gov.do/,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/ae62ba5792_index.html,FETCH_OK,200,text/html,1197,,yes) — `apibcrd.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://apibcrd.bancentral.gov.do/,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/ae62ba5792_index.html,ae62ba5792_index.html,.html,0,,0,0,0,0,2,no,DYNAMIC_SITE_RESOURCE_CONTEXT,context_only,text_cleaned,https://apibcrd.bancentral.gov.do/) — `apibcrd.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://apibcrd.bancentral.gov.do/,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/ae62ba5792_index.html,ae62ba5792_index.html,DYNAMIC_SITE_RESOURCE_CONTEXT,0,no,-20,REJECT_GENERIC_SITE_NOISE,reject,Generic) — `apibcrd.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://apibcrd.bancentral.gov.do/,https://apibcrd.bancentral.gov.do/,https://www.bancentral.gov.do/Publicaciones/Consulta,40,CONTEXT_ONLY_GENERIC_DATA_API_NO_ENCFT_INCOME,context_only) — `apibcrd.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://apibcrd.bancentral.gov.do/,no,yes,,,https://apibcrd.bancentral.gov.do/favicon.ico) — `apibcrd.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://apibcrd.bancentral.gov.do/,no,yes,,,https://apibcrd.bancentral.gov.do/main.6a100f7304c4c093f83e.js) — `apibcrd.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://apibcrd.bancentral.gov.do/,no,yes,,,https://apibcrd.bancentral.gov.do/polyfills.426eab4b203059469c89.js) — `apibcrd.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://apibcrd.bancentral.gov.do/,no,yes,,,https://apibcrd.bancentral.gov.do/runtime.bad18c6ee91dc4233e61v2.js) — `apibcrd.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](http://app.bancentral.gov.do/cgibin/RpWebEngine.exe/PortalAction?&MODE=MAIN&BASE=ENFTNEW&MAIN=WebServerMain.inl,http://app.bancentral.gov.do/cgibin/RpWebEngine.exe/PortalAction?&MODE=MAIN&BASE=ENFTNEW&MAIN=WebServerMain.inl,,20,official_domain_or_path) — `app.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](http://app.bancentral.gov.do/cgibin/RpWebEngine.exe/PortalAction?&MODE=MAIN&BASE=ENFTNMM&MAIN=WebServerMain.inl,http://app.bancentral.gov.do/cgibin/RpWebEngine.exe/PortalAction?&MODE=MAIN&BASE=ENFTNMM&MAIN=WebServerMain.inl,,20,official_domain_or_path) — `app.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](http://app.bancentral.gov.do/cgibin/RpWebEngine.exe/PortalAction?&amp;MODE=MAIN&amp;BASE=ENFTNEW&amp;MAIN=WebServerMain.inl) — `app.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](http://app.bancentral.gov.do/cgibin/RpWebEngine.exe/PortalAction?&amp;MODE=MAIN&amp;BASE=ENFTNMM&amp;MAIN=WebServerMain.inl) — `app.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://bancentral.gov.do/2014.html,,/2014.html,,,,-30,REJECT_ENDPOINT_FALSE_POSITIVE_NOT_ENCFT_INCOME,reject,Endpoint) — `bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://bancentral.gov.do/a/d/2541-encuesta-continua-encft,,/a/d/2541-encuesta-continua-encft,,,,10,REJECT_ENDPOINT_FALSE_POSITIVE_NOT_ENCFT_INCOME,reject,Endpoint) — `bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://bancentral.gov.do/a/d/2555-organigrama,no,no,,,https://bancentral.gov.do/a/d/) — `bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://bancentral.gov.do/sefbcrd,no,no,,,https://bancentral.gov.do/2014.html) — `bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://bancentral.gov.do/sefbcrd,https://cdn.bancentral.gov.do/documents/sefbcrd/documents/Prog) — `bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://bancentral.gov.do/,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/8a3950f8ea_index.html,8a3950f8ea_index.html,POSSIBLE_2026_INCOME_TABLE_WINDOW,ingresos,2025|2026,yes,no,no,no) — `bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://bancentral.gov.do/,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/8a3950f8ea_index.html,8a3950f8ea_index.html,POSSIBLE_2026_INCOME_TABLE_WINDOW,,no,-50,REJECT_WINDOW_FALSE_POSITIVE_NOT_ENCFT_INCOME,reject,Window) — `bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://bancentral.gov.do/a/d/2699-noticias,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/0937c46055_2699-noticias.html,0937c46055_2699-noticias.html,POSSIBLE_2026_INCOME_TABLE_WINDOW,,no,-50,REJECT_WINDOW_FALSE_POSITIVE_NOT_ENCFT_INCOME,reject,Window) — `bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://bancentral.gov.do/a/d/2699-noticias,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/0937c46055_2699-noticias.html,0937c46055_2699-noticias.html,POSSIBLE_2026_INCOME_TABLE_WINDOW,ingresos,2025|2026,yes,no,no,no) — `bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://bancentral.gov.do/a/d/2704-contacto,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/3c8a3cec76_2704-contacto.html,3c8a3cec76_2704-contacto.html,POSSIBLE_2026_INCOME_TABLE_WINDOW,,no,-50,REJECT_WINDOW_FALSE_POSITIVE_NOT_ENCFT_INCOME,reject,Window) — `bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://bancentral.gov.do/a/d/2704-contacto,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/3c8a3cec76_2704-contacto.html,3c8a3cec76_2704-contacto.html,POSSIBLE_2026_INCOME_TABLE_WINDOW,ingresos,2025|2026,yes,no,no,no) — `bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://bancentral.gov.do/a/d/4001-programa-de-credito-san-juan,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/ef5ca0412b_4001-programa-de-credito-san-juan.html,ef5ca0412b_4001-programa-de-credito-san-juan.html,INCOME_OR_INFORMAL_CONTEXT_RESOURCE,0,no,-29,REJECT_FALSE_POSITIVE_NOT_ENCFT_INCOME_TABLE,reject) — `bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://bancentral.gov.do/a/d/5004-estadisticas-sipard,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/d9725ba0b4_5004-estadisticas-sipard.html,d9725ba0b4_5004-estadisticas-sipard.html,INCOME_OR_INFORMAL_CONTEXT_RESOURCE,0,no,-23,REJECT_FALSE_POSITIVE_NOT_ENCFT_INCOME_TABLE,reject) — `bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://bancentral.gov.do/,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/8a3950f8ea_index.html,8a3950f8ea_index.html,CURRENT_INCOME_TABLE_OR_RESOURCE_REVIEW,2026,no,-13,REJECT_FALSE_POSITIVE_NOT_ENCFT_INCOME_TABLE,reject) — `bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://bancentral.gov.do//a/d/2568,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/8eb36d9575_2568.html,8eb36d9575_2568.html,INCOME_OR_INFORMAL_CONTEXT_RESOURCE,0,no,-29,REJECT_FALSE_POSITIVE_NOT_ENCFT_INCOME_TABLE,reject) — `bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://bancentral.gov.do/2014.html,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/44dc0ccc3b_2014.html,44dc0ccc3b_2014.html,INCOME_OR_INFORMAL_CONTEXT_RESOURCE,2014,no,-29,REJECT_FALSE_POSITIVE_NOT_ENCFT_INCOME_TABLE,reject) — `bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://bancentral.gov.do/2015.html,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/8b82e6b3f8_2015.html,8b82e6b3f8_2015.html,INCOME_OR_INFORMAL_CONTEXT_RESOURCE,2015,no,-29,REJECT_FALSE_POSITIVE_NOT_ENCFT_INCOME_TABLE,reject) — `bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://bancentral.gov.do/2016.html,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/8a1c40cfb1_2016.html,8a1c40cfb1_2016.html,INCOME_OR_INFORMAL_CONTEXT_RESOURCE,2016,no,-29,REJECT_FALSE_POSITIVE_NOT_ENCFT_INCOME_TABLE,reject) — `bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://cdn.bancentral.gov.do/documents/publicaciones-economicas/resultados-preliminares-de-la-economia-dominicana/documents/infeco_preliminar2026-03.pdf,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice4a_ordinary_commerce_pressure/outputs/bcrd_sector_downloads_v1g/bcrd_13_score_66__infeco_preliminar2026-03.pdf,OK,,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice4a_ordinary_commerce_pressure/outputs/bcrd_target_text_extracts_v1h/bcrd_13_score_66__infeco_preliminar2026-03.pdf.txt,17,6) — `cdn.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://cdn.bancentral.gov.do/documents/publicaciones-economicas/indice-de-precios-al-consumidor-informe-mensual/documents/Informe-IPC-2026-04.pdf,OK_PDFTOTEXT,,,,0,0,,ingreso,alimentos|bebidas|alimentos) — `cdn.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://cdn.bancentral.gov.do/documents/publicaciones-economicas/boletin-trimestral-del-mercado-laboral/documents/Boletin_Trimestral_Mercado_Laboral_abr-jun_2025.pdf?v=1759190400102,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice12a_targeted_external_missing_data_acquisition/sources/S12A_006_419860f1_Boletin_Trimestral_Mercado_Laboral_abr-jun_2025.pdf,2025,2004|2013|2014|2016|2017|2020|2021|2022|2023|2024|2025,income_bridge_context,CONTEXT_OFFICIAL_2025_INFORMAL_INCOME_PATTERN_NOT_2026,context,23,2,191,0,pdf_pdftotext,unidades|unidades|pan|hogares|ingreso) — `cdn.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://cdn.bancentral.gov.do/documents/publicaciones-economicas/boletin-trimestral-del-mercado-laboral/documents/Boletin_Trimestral_Mercado_Laboral_ene-mar_2025.pdf,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice12a_targeted_external_missing_data_acquisition/sources/S12A_005_2158d124_Boletin_Trimestral_Mercado_Laboral_ene-mar_2025.pdf,2025,2004|2013|2014|2016|2017|2020|2022|2023|2024|2025,income_bridge_context,CONTEXT_OFFICIAL_2025_INFORMAL_INCOME_PATTERN_NOT_2026,context,24,3,203,0,pdf_pdftotext,unidades|unidades|pan|hogares|ingreso) — `cdn.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://cdn.bancentral.gov.do/documents/publicaciones-economicas/boletin-trimestral-del-mercado-laboral/documents/Boletin_Trimestral_Mercado_Laboral_jul-sep_2025.pdf?v=1773273600176,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice12a_targeted_external_missing_data_acquisition/sources/S12A_007_3182e729_Boletin_Trimestral_Mercado_Laboral_jul-sep_2025.pdf,2025,2004|2013|2014|2016|2017|2018|2019|2020|2021|2022|2023|2024|2025,income_bridge_context,CONTEXT_OFFICIAL_2025_INFORMAL_INCOME_PATTERN_NOT_2026,context,19,2,204,0,pdf_pdftotext,unidades|unidades|pan|hogares|ingreso) — `cdn.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://cdn.bancentral.gov.do/documents/publicaciones-economicas/indice-de-precios-al-consumidor-informe-mensual/documents/Informe-IPC-2026-04.pdf,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/7de046c0c7_Informe-IPC-2026-04.pdf,7de046c0c7_Informe-IPC-2026-04.pdf,LOW_RELEVANCE_WINDOW,hogar,2025|2026,no,no,yes,no) — `cdn.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://cdn.bancentral.gov.do/documents/estadisticas/precios/documents/ipc_subyacente_base_2019-2020.xlsx,OK_XLSX,,,ipc) — `cdn.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://cdn.bancentral.gov.do/documents/publicaciones-economicas/indice-de-precios-al-consumidor-informe-mensual/documents/Informe-IPC-2026-04.pdf,inflación,0,847,21,2025|2026) — `cdn.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://cdn.bancentral.gov.do/documents/publicaciones-economicas/indice-de-precios-al-consumidor-informe-mensual/documents/Informe-IPC-2026-04.pdf,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/7de046c0c7_Informe-IPC-2026-04.pdf,7de046c0c7_Informe-IPC-2026-04.pdf,LOW_RELEVANCE_WINDOW,hogar,2026,no,no,yes,no) — `cdn.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://cdn.bancentral.gov.do/documents/publicaciones-economicas/indice-de-precios-al-consumidor-informe-mensual/documents/Informe-IPC-2026-04.pdf,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/7de046c0c7_Informe-IPC-2026-04.pdf,7de046c0c7_Informe-IPC-2026-04.pdf,LOW_RELEVANCE_WINDOW,,no,-55,REJECT_WINDOW_FALSE_POSITIVE_NOT_ENCFT_INCOME,reject,Window) — `cdn.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://cdn.bancentral.gov.do/documents/publicaciones-economicas/indice-de-precios-al-consumidor-informe-mensual/documents/Informe-IPC-2026-04.pdf,inflación,1841,3000,25,2025|2026) — `cdn.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://cdn.bancentral.gov.do/documents/banner_encft.png,/home/yenksid/Downloa) — `cdn.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://cdn.bancentral.gov.do/documents/publicaciones-economicas/indice-de-precios-al-consumidor-informe-mensual/documents/Informe-IPC-2026-04.pdf,grupo,6841,7996,65,2025|2026) — `cdn.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://cdn.bancentral.gov.do/documents/publicaciones-economicas/indice-de-precios-al-consumidor-informe-mensual/documents/Informe-IPC-2026-04.pdf,inflación,60,1219,22,2025|2026) — `cdn.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://cdn.bancentral.gov.do/documents/publicaciones-economicas/indice-de-precios-al-consumidor-informe-mensual/documents/Informe-IPC-2026-04.pdf,inflación,6831,7990,65,2025|2026) — `cdn.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://cdn.bancentral.gov.do/documents/publicaciones-economicas/indice-de-precios-al-consumidor-informe-mensual/documents/Informe-IPC-2026-04.pdf,variación,9770,10598,25,2026) — `cdn.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://cdn.bancentral.gov.do/documents/estadisticas/precios/documents/ipc_subyacente_base_2019-2020.xlsx,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice9a_bcrd_encft_dynamic_table_discovery/sources/2fa898b4d8_ipc_subyacente_base_2019-2020.xlsx,2fa898b4d8_ipc_subyacente_base_2019-2020.xlsx,.xlsx,2026,2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021|2022|2023|2024|2025|2026,0,0,0,0,1,yes,DYNAMIC_SITE_RESOURCE_CONTEXT,context_only,xlsx_zip_xml) — `cdn.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://cdn.bancentral.gov.do/documents/publicaciones-economicas/indice-de-precios-al-consumidor-informe-mensual/documents/Informe-IPC-2026-04.pdf,abril) — `cdn.bancentral.gov.do`
-- [Banco Central de la República Dominicana / labor, macro, prices or statistical data](https://cdn.bancentral.gov.do:443/documents/estadisticas/mercado-cambiario/documents/tasaus_mc.pdf) — `cdn.bancentral.gov.do:443`
-- [Oficina Nacional de Estadística / household, labor, business or statistical data](http://descargas.one.gob.do/download/Metadata_Bases_de_datos_Perfil_Empresas.pdf) — `descargas.one.gob.do`
-- [DGII / tax and economic activity context](https://dgii.gov.do/estadisticas/boletinesEstadisticos/Paginas/default2.aspx,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice4a_ordinary_commerce_pressure/sources/dgii_statistical_bulletins_page.html,True,200,text/html) — `dgii.gov.do`
-- [DGII / tax and economic activity context](https://dgii.gov.do/estadisticas/informeRecaudacionMensual/Paginas/default.aspx,http://dgii.gov.do:80/estadisticas/informeRecaudacionMensual/Paginas/default.aspx,http://dgii.gov.do:80/estadisticas/informeRecaudacionMensual/Paginas/default.aspx,keyword_match) — `dgii.gov.do`
-- [DGII / tax and economic activity context](https://dgii.gov.do/estadisticas/informeRecaudacionMensual/Paginas/default.aspx,https://dgii.gov.do/estadisticas/informeRecaudacionMensual/Paginas/default.aspx,#,keyword_match) — `dgii.gov.do`
-- [DGII / tax and economic activity context](https://dgii.gov.do/estadisticas/informeRecaudacionMensual/Paginas/default.aspx,https://dgii.gov.do/estadisticas/informeRecaudacionMensual/_vti_bin/spsdisco.aspx,/estadisticas/informeRecaudacionMensual/_vti_bin/spsdisco.aspx,keyword_match) — `dgii.gov.do`
-- [DGII / tax and economic activity context](https://dgii.gov.do/estadisticas/informeRecaudacionMensual/Paginas/default.aspx,https://dgii.gov.do/herramientas/consultas/Paginas/Consulta-Activid) — `dgii.gov.do`
-- [DGII / tax and economic activity context](https://dgii.gov.do/estadisticas/informeRecaudacionMensual/Paginas/default.aspx,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice4a_ordinary_commerce_pressure/sources/dgii_monthly_revenue_reports_page.html,True,200,text/html) — `dgii.gov.do`
-- [DGII / tax and economic activity context](https://dgii.gov.do/estadisticas/boletinesEstadisticos/Paginas/default2.aspx,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice) — `dgii.gov.do`
-- [DGII / tax and economic activity context](https://dgii.gov.do/estadisticas/informeRecauda) — `dgii.gov.do`
-- [DGII / tax and economic activity context](https://dgii.gov.do/estadisticas/informeRecaudacionMensual/Documents/2025/Informe%20Preliminar%20abril%202025.pdf,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice4a_ordinary_commerce_pressure/outputs/dgii_targeted_downloads_v1b/pdf_2025_informe_preliminar_abril__Informe_Preliminar_abril_2025.pdf,OK,,1188234,ce05dd1e8fcf375f005707c445ffcbec31960b051c4cef3506e4cb6797952141,application/pdf) — `dgii.gov.do`
-- [DGII / tax and economic activity context](https://dgii.gov.do/estadisticas/informeRecaudacionMensual/Documents/2025/Informe%20Preliminar%20marzo%202025.pdf,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice4a_ordinary_commerce_pressure/outputs/dgii_targeted_downloads_v1b/pdf_2025_informe_preliminar_marzo__Informe_Preliminar_marzo_2025.pdf,OK,,1171483,af51b8145f594fd94d28b8dcf989273bc4756d42a8b278979d16e0da83035e05,application/pdf) — `dgii.gov.do`
-- [DGII / tax and economic activity context](https://dgii.gov.do/estadisticas/informeRecaudacionMensual/Documents/2025/Recaudaci%C3%B3n%20enero-abril%202025.zip,/home/yenksid/Downloads/dr_economic_research_sources/raw/slice4a_ordinary_commerce_pressure/outputs/dgii_targeted_downloads_v1b/zip_2025_enero_abril__Recaudacion_enero-abril_2025.zip,OK,,61648,2a3b7bf22e850081adab3f0f457c484f29c36afae79e9403a895bd25def30e9c,application/x-zip-compressed,1) — `dgii.gov.do`
-- [DGII / tax and economic activity context](https://dgii.gov.do/estadisticas/informeRecaudacionMensual/Documents/2025/Recaudacion) — `dgii.gov.do`
+- <a href="http://anda.one.gob.do">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `anda.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://anda.one.gob.do/">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `anda.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://anda.one.gob.do/">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `anda.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://anda.one.gob.do/index.php">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `anda.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://anda.one.gob.do/index.php/">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `anda.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://anda.one.gob.do/index.php/anda">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `anda.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://anda.one.gob.do/index.php/auth/login">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `anda.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://anda.one.gob.do/index.php/catalog">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `anda.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://bancentral.gov.do/">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://bancentral.gov.do/">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://bancentral.gov.do/">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://bancentral.gov.do//a/d/2568">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://bancentral.gov.do/2014.html">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://bancentral.gov.do/2014.html">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://bancentral.gov.do/2015.html">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://bancentral.gov.do/2016.html">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://bancentral.gov.do/a/d/2541-encuesta-continua-encft">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://bancentral.gov.do/a/d/2555-organigrama">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://bancentral.gov.do/a/d/2699-noticias">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://bancentral.gov.do/a/d/2699-noticias">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://bancentral.gov.do/a/d/2704-contacto">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://bancentral.gov.do/a/d/2704-contacto">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://bancentral.gov.do/a/d/4001-programa-de-credito-san-juan">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://bancentral.gov.do/a/d/5004-estadisticas-sipard">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://bancentral.gov.do/sefbcrd">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://bancentral.gov.do/sefbcrd">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://cdn.bancentral.gov.do/documents/banner_encft.png">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `cdn.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://dgii.gov.do/estadisticas/boletinesEstadisticos/Paginas/default2.aspx">DGII / tax and economic activity context</a> — `dgii.gov.do` — `BROWSER_PAGE`
+- <a href="https://dgii.gov.do/estadisticas/boletinesEstadisticos/Paginas/default2.aspx">DGII / tax and economic activity context</a> — `dgii.gov.do` — `BROWSER_PAGE`
+- <a href="https://dgii.gov.do/estadisticas/boletinesEstadisticos/Paginas/default2.aspx">DGII / tax and economic activity context</a> — `dgii.gov.do` — `BROWSER_PAGE`
+- <a href="https://dgii.gov.do/estadisticas/informeRecaudacionMensual/Paginas/default.aspx">DGII / tax and economic activity context</a> — `dgii.gov.do` — `BROWSER_PAGE`
+- <a href="https://dgii.gov.do/estadisticas/informeRecaudacionMensual/Paginas/default.aspx">DGII / tax and economic activity context</a> — `dgii.gov.do` — `BROWSER_PAGE`
+- <a href="https://dgii.gov.do/estadisticas/informeRecaudacionMensual/Paginas/default.aspx">DGII / tax and economic activity context</a> — `dgii.gov.do` — `BROWSER_PAGE`
+- <a href="https://dgii.gov.do/estadisticas/informeRecaudacionMensual/Paginas/default.aspx">DGII / tax and economic activity context</a> — `dgii.gov.do` — `BROWSER_PAGE`
+- <a href="https://dgii.gov.do/estadisticas/informeRecaudacionMensual/Paginas/default.aspx">DGII / tax and economic activity context</a> — `dgii.gov.do` — `BROWSER_PAGE`
+- <a href="http://dgii.gov.do:80/estadisticas/boletinesEstadisticos/Paginas/default2.aspx">DGII / tax and economic activity context</a> — `dgii.gov.do:80` — `BROWSER_PAGE`
+- <a href="https://digepres.gob.do/ejecucion-presupuestaria-2021/">DIGEPRES / budget execution and fiscal spending data</a> — `digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://digepres.gob.do/ejecucion-presupuestaria-2025/">DIGEPRES / budget execution and fiscal spending data</a> — `digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://digepres.gob.do/gastos/">DIGEPRES / budget execution and fiscal spending data</a> — `digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://digepres.gob.do/historia-direccion-general-de-presupuesto/">DIGEPRES / budget execution and fiscal spending data</a> — `digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://digepres.gob.do/ley-de-presupuesto-general-del-estado-2023/">DIGEPRES / budget execution and fiscal spending data</a> — `digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://digepres.gob.do/ley-de-presupuesto-general-del-estado-2023/">DIGEPRES / budget execution and fiscal spending data</a> — `digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://digepres.gob.do/ley-de-presupuesto-general-del-estado-2026/">DIGEPRES / budget execution and fiscal spending data</a> — `digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://digepres.gob.do/presupuestos-ciudadanos/">DIGEPRES / budget execution and fiscal spending data</a> — `digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://digepres.gob.do/proyecto-de-ley-de-presupuesto-2026/">DIGEPRES / budget execution and fiscal spending data</a> — `digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://digepres.gob.do/proyecto-de-ley-de-presupuesto-2026/">DIGEPRES / budget execution and fiscal spending data</a> — `digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://digepres.gob.do/proyecto-de-ley-de-presupuesto-2026/">DIGEPRES / budget execution and fiscal spending data</a> — `digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://digepres.gob.do/wp-content/uploads/2025/03/cupula-18-1024x1024.png">DIGEPRES / budget execution and fiscal spending data</a> — `digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://digepres.gob.do/wp-content/uploads/2025/03/cupula-18-12x12.png">DIGEPRES / budget execution and fiscal spending data</a> — `digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://digepres.gob.do/wp-content/uploads/2025/03/cupula-18-150x150.png">DIGEPRES / budget execution and fiscal spending data</a> — `digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://digepres.gob.do/wp-content/uploads/2025/03/cupula-18-1536x1536.png">DIGEPRES / budget execution and fiscal spending data</a> — `digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://digepres.gob.do/wp-content/uploads/2025/03/cupula-18-2048x2048.png">DIGEPRES / budget execution and fiscal spending data</a> — `digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://digepres.gob.do/wp-content/uploads/2025/03/cupula-18-300x300.png">DIGEPRES / budget execution and fiscal spending data</a> — `digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://digepres.gob.do/wp-content/uploads/2025/03/cupula-18-768x768.png">DIGEPRES / budget execution and fiscal spending data</a> — `digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://mepyd.gob.do/vaes/marcomacro">MEPyD / development, macro or planning context</a> — `mepyd.gob.do` — `BROWSER_PAGE`
+- <a href="https://pip.one.gob.do/">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `pip.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://pip.one.gob.do/">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `pip.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://pip.one.gob.do/">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `pip.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://pip.one.gob.do/">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `pip.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://pip.one.gob.do/#collapse14">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `pip.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://pip.one.gob.do/#collapse14">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `pip.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://pip.one.gob.do/#collapse15">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `pip.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://pip.one.gob.do/#collapse6">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `pip.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://pip.one.gob.do/#collapse9">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `pip.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://repositoriocultural.bancentral.gov.do/home">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `repositoriocultural.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://stats0.sb.gob.do/estadisticas/sistema-financiero">Superintendencia de Bancos / credit, banking or financial stress context</a> — `stats0.sb.gob.do` — `BROWSER_PAGE`
+- <a href="https://stats0.sb.gob.do/estadisticas/sistema-financiero">Superintendencia de Bancos / credit, banking or financial stress context</a> — `stats0.sb.gob.do` — `BROWSER_PAGE`
+- <a href="http://subportal.bancentral.gov.do/sefbcrd/">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `subportal.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="http://subportal.bancentral.gov.do/somosbcrd/">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `subportal.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://subportal.bancentral.gov.do/economistasdelfuturo/">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `subportal.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://subportal.bancentral.gov.do/mensajespublicitarios/">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `subportal.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://subportal.bancentral.gov.do/somosbcrd/">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `subportal.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://subportal.bancentral.gov.do/somosbcrd/">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `subportal.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://tss.gob.do/salario-promedio-de-cotizantes-en-la-seguridad-social-supera-los-rd38-mil/">Tesorería de la Seguridad Social / formal labor or social security data</a> — `tss.gob.do` — `BROWSER_PAGE`
+- <a href="https://tss.gob.do/salario-promedio-de-cotizantes-en-la-seguridad-social-supera-los-rd38-mil/">Tesorería de la Seguridad Social / formal labor or social security data</a> — `tss.gob.do` — `BROWSER_PAGE`
+- <a href="https://tss.gob.do/salario-promedio-de-cotizantes-en-la-seguridad-social-supera-los-rd38-mil/">Tesorería de la Seguridad Social / formal labor or social security data</a> — `tss.gob.do` — `BROWSER_PAGE`
+- <a href="https://tss.gob.do/salario-promedio-de-cotizantes-en-la-seguridad-social-supera-los-rd38-mil/">Tesorería de la Seguridad Social / formal labor or social security data</a> — `tss.gob.do` — `BROWSER_PAGE`
+- <a href="https://tss.gob.do/salario-promedio-de-cotizantes-en-la-seguridad-social-supera-los-rd38-mil/">Tesorería de la Seguridad Social / formal labor or social security data</a> — `tss.gob.do` — `BROWSER_PAGE`
+- <a href="https://tss.gob.do/salario-promedio-de-cotizantes-en-la-seguridad-social-supera-los-rd38-mil/">Tesorería de la Seguridad Social / formal labor or social security data</a> — `tss.gob.do` — `BROWSER_PAGE`
+- <a href="https://tss.gob.do/salario-promedio-de-cotizantes-en-la-seguridad-social-supera-los-rd38-mil/">Tesorería de la Seguridad Social / formal labor or social security data</a> — `tss.gob.do` — `BROWSER_PAGE`
+- <a href="https://tss.gob.do/salario-promedio-de-cotizantes-en-la-seguridad-social-supera-los-rd38-mil/">Tesorería de la Seguridad Social / formal labor or social security data</a> — `tss.gob.do` — `BROWSER_PAGE`
+- <a href="https://tss.gob.do/salario-promedio-de-cotizantes-en-la-seguridad-social-supera-los-rd38-mil/">Tesorería de la Seguridad Social / formal labor or social security data</a> — `tss.gob.do` — `BROWSER_PAGE`
+- <a href="https://tss.gob.do/salario-promedio-de-cotizantes-en-la-seguridad-social-supera-los-rd38-mil/">Tesorería de la Seguridad Social / formal labor or social security data</a> — `tss.gob.do` — `BROWSER_PAGE`
+- <a href="https://tss.gob.do/salario-promedio-de-cotizantes-en-la-seguridad-social-supera-los-rd38-mil/">Tesorería de la Seguridad Social / formal labor or social security data</a> — `tss.gob.do` — `BROWSER_PAGE`
+- <a href="https://tss.gob.do/salario-promedio-de-cotizantes-en-la-seguridad-social-supera-los-rd38-mil/">Tesorería de la Seguridad Social / formal labor or social security data</a> — `tss.gob.do` — `BROWSER_PAGE`
+- <a href="https://tss.gob.do/salario-promedio-de-cotizantes-en-la-seguridad-social-supera-los-rd38-mil/">Tesorería de la Seguridad Social / formal labor or social security data</a> — `tss.gob.do` — `BROWSER_PAGE`
+- <a href="https://tss.gob.do/salario-promedio-de-cotizantes-en-la-seguridad-social-supera-los-rd38-mil/">Tesorería de la Seguridad Social / formal labor or social security data</a> — `tss.gob.do` — `BROWSER_PAGE`
+- <a href="https://tss.gob.do/salario-promedio-de-cotizantes-en-la-seguridad-social-supera-los-rd38-mil/">Tesorería de la Seguridad Social / formal labor or social security data</a> — `tss.gob.do` — `BROWSER_PAGE`
+- <a href="https://tss.gob.do/salario-promedio-de-cotizantes-en-la-seguridad-social-supera-los-rd38-mil/">Tesorería de la Seguridad Social / formal labor or social security data</a> — `tss.gob.do` — `BROWSER_PAGE`
+- <a href="https://tss.gob.do/salario-promedio-de-cotizantes-en-la-seguridad-social-supera-los-rd38-mil/">Tesorería de la Seguridad Social / formal labor or social security data</a> — `tss.gob.do` — `BROWSER_PAGE`
+- <a href="https://tss.gob.do/salario-promedio-de-cotizantes-en-la-seguridad-social-supera-los-rd38-mil/">Tesorería de la Seguridad Social / formal labor or social security data</a> — `tss.gob.do` — `BROWSER_PAGE`
+- <a href="https://www.bancentral.gov.do/">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `www.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://www.bancentral.gov.do/">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `www.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://www.bancentral.gov.do/">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `www.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://www.bancentral.gov.do/">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `www.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://www.bancentral.gov.do/a/CustomView/5004-estadisticas-sipard">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `www.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://www.bancentral.gov.do/a/CustomView/5004-estadisticas-sipard">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `www.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://www.bancentral.gov.do/a/d/2534-precios">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `www.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://www.bancentral.gov.do/a/d/2534-precios">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `www.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://www.bancentral.gov.do/a/d/2541-encuesta-continua-encft">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `www.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://www.bancentral.gov.do/a/d/2541-encuesta-continua-encft">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `www.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://www.bancentral.gov.do/a/d/2541-encuesta-continua-encft">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `www.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://www.bancentral.gov.do/a/d/2541-encuesta-continua-encft#panel-543">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `www.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://www.bancentral.gov.do/a/d/2541-encuesta-continua-encft#top">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `www.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://www.bancentral.gov.do/a/d/6576-bcrd-informa-que-la-economia-dominicana-registro-un-aumento-interanual-de-118631-nuevos-ocupados-netos-en-el-primer---trimestre-de-2026">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `www.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://www.bancentral.gov.do/a/encuestadores-encft">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `www.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://www.bancentral.gov.do/bc_wp_template/css/bc.css">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `www.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://www.bancentral.gov.do/bc_wp_template/css/bootstrap.min.css">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `www.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="https://www.bancentral.gov.do/bc_wp_template/css/fonts.css">Banco Central de la República Dominicana / labor, macro, prices or statistical data</a> — `www.bancentral.gov.do` — `BROWSER_PAGE`
+- <a href="http://www.digepres.gob.do/presupuesto-ciudadano/preguntas-frecuentes/">DIGEPRES / budget execution and fiscal spending data</a> — `www.digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://www.digepres.gob.do/presupu">DIGEPRES / budget execution and fiscal spending data</a> — `www.digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://www.digepres.gob.do/presupuesto-ciudadano/">DIGEPRES / budget execution and fiscal spending data</a> — `www.digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://www.digepres.gob.do/servicios/servicio/estadisticas-presupuestarias/">DIGEPRES / budget execution and fiscal spending data</a> — `www.digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://www.digepres.gob.do/servicios/wp-content/uploads/2025/05/Base-nuevo-logo-digepres-02.png">DIGEPRES / budget execution and fiscal spending data</a> — `www.digepres.gob.do` — `BROWSER_PAGE`
+- <a href="https://www.hacienda.gob.do/">Ministerio de Hacienda / fiscal and public finance context</a> — `www.hacienda.gob.do` — `BROWSER_PAGE`
+- <a href="https://www.imf.org/-/">IMF / international macroeconomic context</a> — `www.imf.org` — `BROWSER_PAGE`
+- <a href="https://www.one.gob.do/catalogo-datos/ENHOGAR/ENHOGAR_2024_BD_PUB/BD_ENH24_PERSONAS.sav">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `www.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://www.one.gob.do/catalogo-datos/ENHOGAR/ENHOGAR_2024_BD_PUB/Libro_de_c%C3%B3digo_ENHOGAR_2024_Hogares.htm">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `www.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://www.one.gob.do/catalogo-datos/ENHOGAR/ENHOGAR_2024_BD_PUB/Libro_de_c%C3%B3digo_ENHOGAR_2024_Hogares.htm">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `www.one.gob.do` — `BROWSER_PAGE`
+- <a href="https://www.one.gob.do/catalogo-datos/ENIGH/ENIGH_2007_PUB/Libro%20c%C3%B3digos%20Cuestionario%201-2-3_Gastos_Alimentos_Estandarizado_PUB.htm">Oficina Nacional de Estadística / household, labor, business or statistical data</a> — `www.one.gob.do` — `BROWSER_PAGE`
 
-## International institutional sources
+## APIs and dynamic endpoints
 
-- [IMF / international macroeconomic context](https://data.imf.org/en/Data-Explorer?datasetUrn=IMF.RES:WEO(9.0.0) — `data.imf.org`
-- [IMF / international macroeconomic context](https://www.imf.org/-/) — `www.imf.org`
+These items may be useful for downloads, automated queries, or technical reconstruction, but they are not presented as normal human-readable pages.
 
-## Media or sector context sources
+- `apibcrd.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `404`
+- `apibcrd.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `404`
+- `apibcrd.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `404`
+- `apibcrd.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `404`
+- `apibcrd.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `404`
+- `app.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `404`
+- `app.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `404`
+- `app.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `404`
+- `app.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `404`
+- `redatam.one.gob.do` — `API_OR_DYNAMIC_ENDPOINT` — status `0`
+- `redatam.one.gob.do` — `API_OR_DYNAMIC_ENDPOINT` — status `0`
+- `redatam.one.gob.do` — `API_OR_DYNAMIC_ENDPOINT` — status `0`
+- `redatam.one.gob.do` — `API_OR_DYNAMIC_ENDPOINT` — status `0`
+- `redatam.one.gob.do` — `API_OR_DYNAMIC_ENDPOINT` — status `0`
+- `redatam.one.gob.do` — `API_OR_DYNAMIC_ENDPOINT` — status `0`
+- `apibcrd.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `200`
+- `apibcrd.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `200`
+- `apibcrd.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `200`
+- `apibcrd.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `200`
+- `apibcrd.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `200`
+- `apibcrd.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `200`
+- `apibcrd.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `200`
+- `apibcrd.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `200`
+- `apibcrd.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `200`
+- `apibcrd.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `200`
+- `apibcrd.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `200`
+- `apibcrd.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `200`
+- `apibcrd.bancentral.gov.do` — `API_OR_DYNAMIC_ENDPOINT` — status `200`
 
-- None selected.
+## Problem links
 
-## Method note
-
-The public bibliography does not try to list every automatically detected URL. Its purpose is to provide a readable layer of key sources. The full extraction remains preserved locally for audit and can be archived in Zenodo if a heavier technical package is published.
+Links that returned 404, server errors, access blocks, or connection failures were separated from the browser-readable list. They should not be used as public citations without manual verification or replacement.
 
 ## Caution line
 

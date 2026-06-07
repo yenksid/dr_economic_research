@@ -5,6 +5,10 @@ title: "Red-team thesis"
 
 # Red-team thesis
 
+## Visual
+
+![Thesis logic map](../assets/thesis_logic_map_en.svg)
+
 The thesis was attacked from two sides:
 
 1. **Comfort:** the economy is resilient, so pressure is overstated.

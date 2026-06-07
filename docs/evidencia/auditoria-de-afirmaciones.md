@@ -7,6 +7,10 @@ title: "Auditoría de afirmaciones"
 
 Esta página resume qué afirmaciones están permitidas, cuáles siguen sin probarse y cuáles están rechazadas como límites de inferencia.
 
+## Visual
+
+![Estados de afirmaciones](../assets/claim_status_counts_es.svg)
+
 ## Regla central
 
 **Presión no es lo mismo que comportamiento.**
