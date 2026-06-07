@@ -15,10 +15,10 @@ El repositorio público usa una bibliografía más pequeña, legible y organizad
 
 ## Archivos públicos
 
-- Bibliografía pública clave: [`data/key_public_bibliography_v1.csv`](../../data/key_public_bibliography_v1.csv)
-- Resumen de dominios de la bibliografía clave: [`data/key_public_bibliography_domain_summary_v1.csv`](../../data/key_public_bibliography_domain_summary_v1.csv)
-- Registro de artefactos locales: [`data/local_source_artifact_registry_v1.csv`](../../data/local_source_artifact_registry_v1.csv)
-- Resumen automático de dominios detectados: [`data/source_domain_summary_v1.csv`](../../data/source_domain_summary_v1.csv)
+- Bibliografía pública clave: [`data/key_public_bibliography_v1.csv`](../data/key_public_bibliography_v1.csv)
+- Resumen de dominios de la bibliografía clave: [`data/key_public_bibliography_domain_summary_v1.csv`](../data/key_public_bibliography_domain_summary_v1.csv)
+- Registro de artefactos locales: [`data/local_source_artifact_registry_v1.csv`](../data/local_source_artifact_registry_v1.csv)
+- Resumen automático de dominios detectados: [`data/source_domain_summary_v1.csv`](../data/source_domain_summary_v1.csv)
 
 ## Conteo
 

@@ -15,10 +15,10 @@ The public repository uses a smaller, readable, organized bibliography.
 
 ## Public files
 
-- Key public bibliography: [`data/key_public_bibliography_v1.csv`](../../data/key_public_bibliography_v1.csv)
-- Key bibliography domain summary: [`data/key_public_bibliography_domain_summary_v1.csv`](../../data/key_public_bibliography_domain_summary_v1.csv)
-- Local artifact registry: [`data/local_source_artifact_registry_v1.csv`](../../data/local_source_artifact_registry_v1.csv)
-- Automatic detected-domain summary: [`data/source_domain_summary_v1.csv`](../../data/source_domain_summary_v1.csv)
+- Key public bibliography: [`data/key_public_bibliography_v1.csv`](../data/key_public_bibliography_v1.csv)
+- Key bibliography domain summary: [`data/key_public_bibliography_domain_summary_v1.csv`](../data/key_public_bibliography_domain_summary_v1.csv)
+- Local artifact registry: [`data/local_source_artifact_registry_v1.csv`](../data/local_source_artifact_registry_v1.csv)
+- Automatic detected-domain summary: [`data/source_domain_summary_v1.csv`](../data/source_domain_summary_v1.csv)
 
 ## Counts
 

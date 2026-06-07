@@ -30,9 +30,16 @@ La lectura más fuerte es una presión selectiva: resistencia macroeconómica y 
 - [Visuales](./evidencia/visuales.md)
 - [Glosario](./evidencia/glosario.md)
 
+
+## Resumen visual
+
+![Mapa lógico de la tesis](./assets/thesis_logic_map_es.svg)
+
+También puedes abrir la página completa de [Visuales](./evidencia/visuales.md), que incluye gráficos sobre estados de afirmaciones y tipos de fuentes.
+
 ## Datos
 
-Los archivos CSV de evidencia, límites y decisiones están en la carpeta [`data`](../data/).
+Los archivos CSV de evidencia, límites y decisiones están en la carpeta [`data`](./data/).
 
 ## Línea editorial
 

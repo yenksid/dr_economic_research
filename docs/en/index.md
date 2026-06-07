@@ -30,9 +30,16 @@ The strongest reading is a selective squeeze: macro resilience and formal-channe
 - [Visuals](../evidence/visuals.md)
 - [Glossary](../evidence/glossary.md)
 
+
+## Visual summary
+
+![Thesis logic map](../assets/thesis_logic_map_en.svg)
+
+You can also open the full [Visuals](../evidence/visuals.md) page, which includes charts on claim statuses and source types.
+
 ## Data
 
-Evidence, boundary, and decision CSVs are available in the [`data`](../../data/) folder.
+Evidence, boundary, and decision CSVs are available in the [`data`](../data/) folder.
 
 ## Editorial line
 
