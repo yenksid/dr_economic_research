@@ -1,0 +1,18 @@
+fact_id=FRESH_CHICKEN_PRICE_CHANGE
+metric_es=Pollo fresco
+metric_en=Fresh chicken
+period_1=
+value_1=
+period_2=Periodo reportado
+value_2=13.66
+absolute_change=
+percent_change=13.66
+unit=%
+value_method=DIRECT_RATE
+source_url=https://cdn.bancentral.gov.do/documents/publicaciones-economicas/indice-de-precios-al-consumidor-informe-mensual/documents/Informe-IPC-2026-04.pdf
+local_source_file=private_local_audit_path_redacted
+claim_status=SUPPORTED_PRESSURE_CONTEXT
+validation_file=docs/evidencia/validacion.html; docs/evidence/validation.html
+
+Boundary:
+This fact supports macro or pressure context only. It does not prove household-wide comfort, informal-worker offset, or direct trade-down behavior.

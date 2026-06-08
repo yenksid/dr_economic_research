@@ -1,0 +1,18 @@
+fact_id=TOURISM_AIR_FOREIGN_ARRIVALS_JAN_MAR_2026
+metric_es=Llegadas aéreas extranjeras
+metric_en=Foreign air arrivals
+period_1=Ene-Mar 2025
+value_1=2,008,515
+period_2=Ene-Mar 2026
+value_2=2,260,383
+absolute_change=251,868
+percent_change=12.54
+unit=personas / people
+value_method=DERIVED_2025_BASE_FROM_LOCKED_2026_VALUE_AND_YOY
+source_url=https://cdn.bancentral.gov.do/documents/estadisticas/sector-turismo/documents/lleg_total.xls
+local_source_file=private_local_audit_path_redacted
+claim_status=SUPPORTED_MACRO_CONTEXT_ONLY
+validation_file=docs/evidencia/validacion.html; docs/evidence/validation.html
+
+Boundary:
+This fact supports macro or pressure context only. It does not prove household-wide comfort, informal-worker offset, or direct trade-down behavior.

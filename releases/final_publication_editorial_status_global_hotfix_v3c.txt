@@ -1,0 +1,6 @@
+FINAL_PUBLICATION_EDITORIAL_STATUS_GLOBAL_HOTFIX_V3C_CREATED
+created_utc=2026-06-08T01:48:48.189922+00:00
+patched_files=1
+patched=docs/en/publication.html
+change=all reader-facing editorial status labels replaced with public thesis labels
+boundary_preservation=no facts changed; no claims upgraded; no NOT_PROVEN or REJECTED_BOUNDARY labels changed

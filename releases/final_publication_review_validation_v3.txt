@@ -1,0 +1,5 @@
+VALIDATION_PASS
+reader_editorial_status_removed=yes
+patched_files=1
+local_path_leaks=0
+missing_local_links=0

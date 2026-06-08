@@ -1,0 +1,7 @@
+FINAL_PUBLICATION_META_TRANSITION_HOTFIX_V3D_CREATED
+created_utc=2026-06-08T01:54:32.623800+00:00
+patched_files=2
+patched=docs/index.html
+patched=docs/en/index.html
+change=canonicalized hero meta blocks and language transitions across main reader pages
+boundary_preservation=no facts changed; no claims upgraded; no NOT_PROVEN or REJECTED_BOUNDARY labels changed

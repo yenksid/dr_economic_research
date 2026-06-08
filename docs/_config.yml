@@ -1,8 +1,0 @@
-title: "Ni colapso ni comodidad / Not Collapse, Not Comfort"
-description: "Evidencia de una presión selectiva sobre los hogares en República Dominicana / Evidence for a selective household squeeze in the Dominican Republic"
-theme: minima
-markdown: kramdown
-plugins:
-  - jekyll-feed
-baseurl: "/dr_economic_research"
-url: "https://yenksid.github.io"
