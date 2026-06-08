@@ -1,0 +1,8 @@
+FINAL_PUBLICATION_PROLOGUE_CARD_WRAP_V1_CREATED
+created_utc=2026-06-08T02:50:10.912609+00:00
+patched_files=3
+patched=docs/es/publicacion.html
+patched=docs/en/publication.html
+patched=docs/assets/css/styles.css
+change=wrapped and styled bilingual prologue as a visible reader-facing card
+boundary_preservation=no text facts changed; no claims upgraded; no NOT_PROVEN or REJECTED_BOUNDARY labels changed

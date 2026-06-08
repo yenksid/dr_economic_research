@@ -1,0 +1,9 @@
+FINAL_PUBLICATION_PROLOGUE_V1_CREATED
+created_utc=2026-06-08T02:29:52.035208+00:00
+patched_files=3
+patched=docs/es/publicacion.html
+patched=docs/en/publication.html
+patched=docs/assets/css/styles.css
+change=added bilingual narrative prologue explaining the origin of the investigation
+method_boundary=reddit origin story is not treated as representative survey; no direct trade-down claim added
+boundary_preservation=no facts changed; no claims upgraded; no NOT_PROVEN or REJECTED_BOUNDARY labels changed

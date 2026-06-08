@@ -1,0 +1,8 @@
+FINAL_PUBLICATION_SECOND_NEPAL_PROLOGUE_V1_CREATED
+created_utc=2026-06-08T02:46:39.915499+00:00
+patched_files=2
+patched=docs/es/publicacion.html
+patched=docs/en/publication.html
+change=added final bilingual prologue framing second-nepal fear as motivation, not conclusion
+method_boundary=reddit origin story is not treated as representative survey; no collapse claim added; no direct trade-down claim added
+boundary_preservation=no facts changed; no claims upgraded; no NOT_PROVEN or REJECTED_BOUNDARY labels changed
